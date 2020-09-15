@@ -10,8 +10,8 @@ window.onload = () => {
           })
         }     
         for(let cont = 0; cont <= fields.length ; cont++) {
-          this.document.getElementById(fields[contador].id).addEventListener("keypress", function(event) {
-            if(event.keyCode == "13") {
+          this.document.getElementById(fields[cont].id).addEventListener("keypress", function(event) {
+            if(event.key == "Enter") {
                 nextField(actualField);
             }
           })
